@@ -1,0 +1,12 @@
+ls
+echo "Enterfilename:"
+read file
+if test -f $file
+    then
+    echo "Exists"
+    cp $file abc.txt
+    ls
+    cat abc.txt
+else
+    echo "No"
+fi
